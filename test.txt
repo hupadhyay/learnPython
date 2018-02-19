@@ -1,0 +1,4 @@
+Hello Python Input Output Operaiton
+this is write line function of python
+This is seconline using writeline function.
+this satement is written in append mode.
