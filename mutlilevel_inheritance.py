@@ -7,6 +7,7 @@ class Parent:
 
 class Parent2(Parent):
     def __init__(self):
+        Parent.__init__(self)
         print("second level parent class")
 
     def level2Func(self):
@@ -14,6 +15,7 @@ class Parent2(Parent):
 
 class Child(Parent2):
     def __init__(self):
+        Parent2.__init__(self)
         print("Child class")
 
     def childFunc(self):
