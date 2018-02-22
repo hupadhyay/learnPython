@@ -1,4 +1,4 @@
-class Parent:
+class Parent(object):
     def __init__(self):
         print("first level parent class")
 

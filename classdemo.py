@@ -1,4 +1,4 @@
-class Student:
+class Student(object):
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -7,9 +7,17 @@ class Student:
         print('Name of student is ' + self.name)
         print('Age of student is '+ str(self.age))
 
-
+    #this is equivalent to toString() method of java class.
+    def __str__(self):
+        return "Student class is created by{}".format('himanshu')
+    
+    def __del__(self):
+        return "this is distructor method"
+    
 student = Student("Himanshu", 30)
 student.display()
+print(student)
+
 
 #Attributes
 

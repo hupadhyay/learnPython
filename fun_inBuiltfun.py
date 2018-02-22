@@ -1,5 +1,6 @@
 #Declare function for sum of two numbers
 def sum(firstNum, secNum):
+    print(f'sum of two number {firstNum} and {secNum}')
     return firstNum + secNum;
 
 #Declare function for multiply of two numbers
