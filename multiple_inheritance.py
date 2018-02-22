@@ -1,4 +1,4 @@
-class Parent1:
+class Parent1(object):
     def __init__(self):
         print('Parent1 class initialized')
 
@@ -6,7 +6,7 @@ class Parent1:
         print('Parent1 class function')
 
 
-class Parent2:
+class Parent2(object):
     def __init__(self):
         print('Parent2 class initialized')
 
@@ -16,6 +16,8 @@ class Parent2:
 
 class Child(Parent1, Parent2):
     def __init__(self):
+        Parent1.__init__(self)
+        Parent2.__init__(self)
         print('child class initalized')
 
     def funChild(self):
